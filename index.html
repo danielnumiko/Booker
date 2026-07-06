@@ -23,14 +23,12 @@
   body{background:#dedad4}
   .bp-scroll::-webkit-scrollbar{display:none}
   .bp-link{color:inherit;text-decoration:none;display:block}
-  /* hover: Numiko arrow — slides out in its direction, a clone enters from the opposite edge, clipped by the box */
-  .bp-arrowbox{position:relative;display:inline-block;overflow:hidden}
-  .bp-arrowbox svg{display:block;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
-  .bp-arrowbox svg:last-child{position:absolute;top:0;left:0;transform:translateX(-105%)}
-  a:hover .bp-arrowbox svg:first-child,
-  .bp-hovergroup:hover .bp-arrowbox svg:first-child{transform:translateX(105%)}
-  a:hover .bp-arrowbox svg:last-child,
-  .bp-hovergroup:hover .bp-arrowbox svg:last-child{transform:translateX(0)}
+  /* hover: teaser arrow — simple indent, nudges in its pointing direction */
+  .bp-arrowbox{display:inline-block;transition:transform .25s ease}
+  .bp-arrowbox svg{display:block}
+  .bp-arrowbox svg:last-child{display:none}
+  a:hover .bp-arrowbox,
+  .bp-hovergroup:hover .bp-arrowbox{transform:translateX(6px)}
   a:hover .bp-title,
   .bp-hovergroup:hover .bp-title{text-decoration:underline;text-decoration-color:var(--ul-gold,var(--gold));text-decoration-thickness:2px;text-underline-offset:3px}
   /* hover: teaser image scales within its clipping container (container fixed) */
