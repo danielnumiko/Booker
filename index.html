@@ -29,8 +29,10 @@
   .bp-arrowbox svg:last-child{display:none}
   a:hover .bp-arrowbox,
   .bp-hovergroup:hover .bp-arrowbox{transform:translateX(6px)}
+  /* hover: underline wipes in from the left (animated gradient, keeps the gold token) */
+  .bp-title{width:fit-content;background-image:linear-gradient(var(--ul-gold,var(--gold)),var(--ul-gold,var(--gold)));background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;padding-bottom:3px;transition:background-size .35s ease}
   a:hover .bp-title,
-  .bp-hovergroup:hover .bp-title{text-decoration:underline;text-decoration-color:var(--ul-gold,var(--gold));text-decoration-thickness:2px;text-underline-offset:3px}
+  .bp-hovergroup:hover .bp-title{background-size:100% 2px}
   /* hover: teaser image scales within its clipping container (container fixed) */
   .bp-link img,.bp-hovergroup img{transition:transform .55s cubic-bezier(.4,0,.2,1)}
   .bp-link:hover img,
