@@ -30,9 +30,15 @@
   a:hover .bp-arrowbox,
   .bp-hovergroup:hover .bp-arrowbox{transform:translateX(6px)}
   /* hover: underline wipes in from the left, on every line (inline span + cloned box decoration) */
+  /* no-JS fallback: all lines animate together */
   .bp-ul{-webkit-box-decoration-break:clone;box-decoration-break:clone;background-image:linear-gradient(var(--ul-gold,var(--gold)),var(--ul-gold,var(--gold)));background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .35s ease}
   a:hover .bp-ul,
   .bp-hovergroup:hover .bp-ul{background-size:100% 2px}
+  /* JS-enhanced: title is split into per-line spans that underline in turn (line 1, then 2, then 3…) */
+  .bp-ul.js-lines{background-image:none!important;display:block}
+  .bp-ul-line{display:block;width:fit-content;background-image:linear-gradient(var(--ul-gold,var(--gold)),var(--ul-gold,var(--gold)));background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .3s ease}
+  a:hover .bp-ul-line,
+  .bp-hovergroup:hover .bp-ul-line{background-size:100% 2px}
   /* hover: teaser image scales within its clipping container (container fixed) */
   .bp-link img,.bp-hovergroup img{transition:transform .55s cubic-bezier(.4,0,.2,1)}
   .bp-link:hover img,
@@ -372,6 +378,62 @@ class Component extends DCLogic {
     };
   }
 }
+</script>
+<script>
+/* Split each teaser title into per-line spans so the underline cascades line-by-line on hover.
+   Line breaks depend on wrap width, so measure the live layout and rebuild on resize. */
+(function () {
+  var STEP = 0.13; // seconds of delay added per line
+  function build(ul) {
+    var text = ul.getAttribute('data-ul-text');
+    if (text === null) { text = ul.textContent; ul.setAttribute('data-ul-text', text); }
+    ul.classList.add('js-lines');
+    // 1) lay words out inline to measure where the browser breaks lines
+    ul.textContent = '';
+    var words = text.split(/\s+/).filter(Boolean);
+    var probes = words.map(function (w, i) {
+      var s = document.createElement('span');
+      s.textContent = (i ? ' ' : '') + w;
+      ul.appendChild(s);
+      return s;
+    });
+    // 2) group consecutive words that share an offsetTop into a line
+    var lines = [], cur = null, top = null;
+    probes.forEach(function (s, i) {
+      var t = s.offsetTop;
+      if (cur === null || t !== top) { cur = []; lines.push(cur); top = t; }
+      cur.push(words[i]);
+    });
+    // 3) rebuild as block line-spans, each with an incremental transition-delay
+    ul.textContent = '';
+    lines.forEach(function (group, li) {
+      var line = document.createElement('span');
+      line.className = 'bp-ul-line';
+      line.style.transitionDelay = (li * STEP) + 's';
+      line.textContent = group.join(' ');
+      ul.appendChild(line);
+    });
+  }
+  var observer, deb;
+  // force=true rebuilds every title (used on resize, where line breaks change);
+  // force=false only splits titles that aren't split yet (used when the DC framework (re)renders them)
+  function run(force) {
+    if (observer) observer.disconnect();
+    var uls = document.querySelectorAll('.bp-title .bp-ul');
+    for (var i = 0; i < uls.length; i++) {
+      if (force || !uls[i].classList.contains('js-lines')) build(uls[i]);
+    }
+    if (observer) observer.observe(document.body, { childList: true, subtree: true });
+  }
+  function init() {
+    observer = new MutationObserver(function () { clearTimeout(deb); deb = setTimeout(function () { run(false); }, 60); });
+    run(false); // observer starts observing at the end of run()
+    var rt;
+    window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { run(true); }, 150); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
 </script>
 </body>
 </html>
