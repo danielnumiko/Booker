@@ -36,9 +36,19 @@
   .bp-hovergroup:hover .bp-ul{background-size:100% 2px}
   /* JS-enhanced: one underline bar per rendered line, sized to that line's exact width, cascading in turn */
   .bp-ul.js-lines{display:block;background-image:none!important}
-  .bp-ul-bar{position:absolute;height:2px;background:var(--ul-gold,var(--gold));transform:scaleX(0);transform-origin:left center;transition:transform .3s ease;pointer-events:none}
+  /* per-line delays are set inline as custom props: --d-enter draws line 1→N, --d-leave rewinds N→1.
+     The delay in effect follows the state being transitioned *into*, so enter and leave stagger differently. */
+  .bp-ul-bar{position:absolute;height:2px;background:var(--ul-gold,var(--gold));transform:scaleX(0);transform-origin:left center;transition:transform .3s ease;transition-delay:var(--d-leave,0s);pointer-events:none}
   a:hover .bp-ul-bar,
-  .bp-hovergroup:hover .bp-ul-bar{transform:scaleX(1)}
+  .bp-hovergroup:hover .bp-ul-bar{transform:scaleX(1);transition-delay:var(--d-enter,0s)}
+  /* respect reduced-motion: underline still appears on hover, but instantly and without the cascade */
+  @media (prefers-reduced-motion: reduce) {
+    .bp-ul-bar,
+    .bp-ul,
+    .bp-arrowbox,
+    .bp-link img,
+    .bp-hovergroup img { transition: none !important; transition-delay: 0s !important; }
+  }
   /* hover: teaser image scales within its clipping container (container fixed) */
   .bp-link img,.bp-hovergroup img{transition:transform .55s cubic-bezier(.4,0,.2,1)}
   .bp-link:hover img,
@@ -396,7 +406,7 @@ class Component extends DCLogic {
     // one client rect per rendered line — reflects the browser's real wrapping (incl. hyphen breaks)
     var rects = range.getClientRects();
     var frag = document.createDocumentFragment();
-    var idx = 0;
+    var bars = [];
     for (var i = 0; i < rects.length; i++) {
       var rc = rects[i];
       if (rc.width < 1 || rc.height < 1) continue;
@@ -405,10 +415,15 @@ class Component extends DCLogic {
       bar.style.left = (rc.left - ulRect.left) + 'px';
       bar.style.top = (rc.bottom - ulRect.top - 2) + 'px';
       bar.style.width = rc.width + 'px';       // exact width of this line
-      bar.style.transitionDelay = (idx * STEP) + 's';
+      bars.push(bar);
       frag.appendChild(bar);
-      idx++;
     }
+    // draw forwards (line 1→N) on enter, rewind (N→1) on leave
+    var n = bars.length;
+    bars.forEach(function (bar, i) {
+      bar.style.setProperty('--d-enter', (i * STEP) + 's');
+      bar.style.setProperty('--d-leave', ((n - 1 - i) * STEP) + 's');
+    });
     ul.appendChild(frag); // bars are absolutely positioned, so they don't affect the text
   }
   var observer, deb;
