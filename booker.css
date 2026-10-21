@@ -80,7 +80,7 @@ a:hover .bp-ul-bar,
 .bp-age-line{font-weight:500;font-size:13px;color:var(--gold8)}
 .bp-age-line b{font-weight:600}
 /* reading-age chip (reader icon) — teaser + book hero */
-.bp-age-chip{display:inline-flex;align-items:center;align-self:flex-start;white-space:nowrap;font-family:'Crimson Pro',serif;font-weight:500;font-size:15px;line-height:1;color:#7d5f33;background:#f1ebdf;border-radius:7px;padding:6px 13px}
+.bp-age-chip{display:inline-flex;align-items:center;align-self:flex-start;white-space:nowrap;font-family:'Crimson Pro',serif;font-weight:500;font-size:15px;line-height:1;color:#7d5f33;background:#f1ebdf;border-radius:6px;padding:5px 9px}
 .bp-age-chip svg{width:15px;height:15px;flex:none;color:var(--gold)}
 .bp-age-chip .n{font-weight:700}
 .bp-bhero .bp-age-chip{align-self:center;font-size:13.5px;padding:7px 13px 7px 11px}
