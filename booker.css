@@ -94,7 +94,6 @@ a:hover .bp-ul-bar,
 .rc-meta .t{font-weight:600;font-size:24px;line-height:1.15;color:var(--ink)}
 .rc-meta .a{font-family:'Crimson Pro',serif;font-size:16px;color:var(--body);margin-top:-3px}
 .rc-meta .s{font-family:'Crimson Pro',serif;font-size:16px;line-height:1.35;color:var(--body);max-width:62ch;margin:0}
-.rc-meta .bp-age-chip{display:flex;align-self:stretch}
 .rc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
 .rc-card{display:flex;flex-direction:column;gap:7px;padding:15px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:inherit;background:var(--paper);transition:border-color .15s}
 .rc-card:hover{border-color:var(--goldL)}
