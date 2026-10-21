@@ -1,0 +1,128 @@
+/* ============================================================
+   Booker Prize prototype — shared design system
+   Extracted from index.html so new pages share the same fonts,
+   gold tokens and component behaviour. index.html keeps its own
+   inline copy; this file drives the additional pages.
+   ============================================================ */
+
+@font-face{font-family:'ITC Avant Garde Gothic Std';src:url('uploads/ITCAvantGardeStd-XLt.otf') format('opentype');font-weight:100 300;font-style:normal;font-display:swap}
+@font-face{font-family:'ITC Avant Garde Gothic Std';src:url('uploads/ITCAvantGardeStd-Md.otf') format('opentype');font-weight:400 500;font-style:normal;font-display:swap}
+@font-face{font-family:'ITC Avant Garde Gothic Std';src:url('uploads/ITCAvantGardeStd-Demi.otf') format('opentype');font-weight:600 700;font-style:normal;font-display:swap}
+@font-face{font-family:'Crimson Pro';src:url('uploads/CrimsonPro-VariableFont_wght.ttf') format('truetype');font-weight:200 900;font-style:normal;font-display:swap}
+
+html,body{margin:0;padding:0}
+*{box-sizing:border-box}
+::selection{background:#c9b77b;color:#000}
+body{background:#dedad4}
+
+/* ---- page container + design tokens ---- */
+.bp-page{
+  --gold:#916f3d;--goldL:#c9b77b;--gold8:#634730;--ink:#000;--body:#6d6d6d;
+  --cream:#d0ccc6;--dark2:#373530;--dark8:#3f3c35;--paper:#f9f7f7;--line:#efefef;
+  --tan:#d9c3a5;
+  font-family:'ITC Avant Garde Gothic Std','Jost',sans-serif;
+  color:#000;background:#fff;width:1280px;max-width:100%;margin:0 auto;
+  box-shadow:0 4px 50px rgba(0,0,0,.15);overflow:hidden;
+}
+
+/* ---- links + teaser arrow (indents on hover) ---- */
+.bp-scroll::-webkit-scrollbar{display:none}
+.bp-link{color:inherit;text-decoration:none;display:block}
+.bp-arrowbox{display:inline-block;transition:transform .25s ease}
+.bp-arrowbox svg{display:block}
+.bp-arrowbox svg:last-child{display:none}
+a:hover .bp-arrowbox,
+.bp-hovergroup:hover .bp-arrowbox{transform:translateX(6px)}
+
+/* ---- underline: wipes in from the left, per line, cascading ---- */
+.bp-ul{position:relative;-webkit-box-decoration-break:clone;box-decoration-break:clone;background-image:linear-gradient(var(--ul-gold,var(--gold)),var(--ul-gold,var(--gold)));background-repeat:no-repeat;background-position:0 100%;background-size:0% 2px;transition:background-size .35s ease}
+a:hover .bp-ul,
+.bp-hovergroup:hover .bp-ul{background-size:100% 2px}
+.bp-ul.js-lines{display:block;background-image:none!important}
+.bp-ul-bar{position:absolute;height:2px;background:var(--ul-gold,var(--gold));transform:scaleX(0);transform-origin:left center;transition:transform .3s ease;transition-delay:var(--d-leave,0s);pointer-events:none}
+a:hover .bp-ul-bar,
+.bp-hovergroup:hover .bp-ul-bar{transform:scaleX(1);transition-delay:var(--d-enter,0s)}
+@media (prefers-reduced-motion: reduce){
+  .bp-ul-bar,.bp-ul,.bp-arrowbox,.bp-link img,.bp-hovergroup img{transition:none!important;transition-delay:0s!important}
+}
+
+/* ---- image zoom within a fixed clip ---- */
+.bp-link img,.bp-hovergroup img{transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.bp-link:hover img,.bp-hovergroup:hover img{transform:scale(1.06)}
+.bp-book{transition:transform .45s cubic-bezier(.4,0,.2,1)}
+.bp-link:hover .bp-book{transform:scale(1.04)}
+.bp-link:hover .bp-book img{transform:none}
+
+/* ---- carousel + footer buttons ---- */
+.bp-cbtn:hover{background:var(--gold)!important;color:#fff!important}
+.bp-footbtn{transition:background .25s ease}
+.bp-footbtn:hover{background:#fff!important}
+.bp-footlink:hover{text-decoration:none!important}
+
+/* ============================================================
+   New components for the children's pages
+   ============================================================ */
+
+/* breadcrumb */
+.bp-crumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;letter-spacing:.02em;color:var(--body)}
+.bp-crumb a{color:var(--body);text-decoration:none}
+.bp-crumb a:hover{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.bp-crumb span.sep{color:#c7c2ba}
+
+/* primary / ghost buttons */
+.bp-btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;text-decoration:none;border:0;border-radius:4px;padding:15px 26px;font-family:inherit;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .25s ease}
+.bp-btn:hover{background:var(--gold8)}
+.bp-btn--light{background:var(--goldL);color:#000}
+.bp-btn--light:hover{background:#dcc98a}
+.bp-btn--ghost{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}
+.bp-btn--ghost:hover{background:var(--gold);color:#fff}
+
+/* recommended reading-age chip (the new label) */
+.bp-age{display:inline-flex;align-items:center;gap:9px;border:1.5px solid var(--gold);border-radius:999px;padding:8px 16px 8px 13px;color:var(--gold8);font-weight:500;font-size:14px;letter-spacing:.01em;background:#fbf8f3}
+.bp-age svg{flex:none;display:block}
+.bp-age b{font-weight:600}
+/* plainer inline variant for listings */
+.bp-age-line{font-weight:500;font-size:13px;color:var(--gold8)}
+.bp-age-line b{font-weight:600}
+
+/* book facts / metadata stack */
+.bp-meta{display:flex;flex-direction:column;gap:6px}
+.bp-meta .row{font-size:15px;color:var(--body)}
+.bp-meta .row b{color:var(--ink);font-weight:500}
+.bp-meta .row a{color:var(--gold);text-decoration:none}
+.bp-meta .row a:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* signup form (MailChimp-style) */
+.bp-form{display:flex;gap:12px;flex-wrap:wrap;max-width:520px}
+.bp-input{flex:1 1 240px;min-width:0;font-family:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid #d8d4cc;border-radius:4px;padding:14px 16px}
+.bp-input::placeholder{color:#9a958c}
+.bp-input:focus{outline:none;border-color:var(--gold)}
+.bp-form .bp-btn{flex:none}
+.bp-consent{font-family:'Crimson Pro',serif;font-size:15px;line-height:1.5;color:var(--body);max-width:40em}
+.bp-consent a{color:var(--gold)}
+
+/* download row (resource list) */
+.bp-dl{display:flex;align-items:center;gap:18px;padding:18px 0;border-top:1px solid var(--line)}
+.bp-dl:last-child{border-bottom:1px solid var(--line)}
+.bp-dl .ic{flex:none;width:44px;height:44px;border-radius:6px;background:#f3efe9;display:flex;align-items:center;justify-content:center;color:var(--gold8)}
+.bp-dl .info{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+.bp-dl .info .t{font-weight:500;font-size:16px;color:var(--ink);line-height:1.3}
+.bp-dl .info .m{font-size:13px;color:var(--body);letter-spacing:.02em}
+.bp-dl .dlbtn{flex:none;display:inline-flex;align-items:center;gap:8px;color:var(--gold);text-decoration:none;font-weight:600;font-size:12px;letter-spacing:.07em;text-transform:uppercase}
+.bp-dl .dlbtn svg{transition:transform .25s ease}
+.bp-dl:hover .dlbtn svg{transform:translateY(3px)}
+
+/* file-type badge */
+.bp-badge{display:inline-block;font-weight:600;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:3px;background:var(--dark2);color:#fff}
+.bp-badge.pdf{background:#9c3b2e}
+.bp-badge.ppt{background:#b5641f}
+.bp-badge.video{background:#2f5d57}
+.bp-badge.zip{background:var(--gold8)}
+
+/* generic section eyebrow */
+.bp-eyebrow{font-weight:500;font-size:11px;letter-spacing:1px;color:var(--gold);text-transform:uppercase}
+
+/* placeholder book cover (prototype stand-in) */
+.bp-cover{position:relative;display:flex;flex-direction:column;justify-content:space-between;border-radius:3px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.28);aspect-ratio:0.66;padding:22px 20px;color:#fff}
+.bp-cover .ct{font-weight:600;font-size:26px;line-height:1.1}
+.bp-cover .ca{font-family:'Crimson Pro',serif;font-size:16px;opacity:.9}

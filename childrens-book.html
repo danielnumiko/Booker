@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Murderer's Ape — Booker Prize prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="booker.css">
+</head>
+<body>
+<div class="bp-page">
+
+  <!-- ===== MASTHEAD ===== -->
+  <div style="position:relative;z-index:2;background:#000">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px;padding:0 48px">
+      <a href="index.html" aria-label="The Booker Prizes home" style="flex:none;display:block;text-decoration:none">
+        <img src="assets/logo.png" alt="The Booker Prizes" style="width:124px;height:auto;display:block">
+      </a>
+      <nav style="display:flex;align-items:center;gap:22px;flex:0 1 auto">
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Booker Prize</a>
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">International Booker Prize</a>
+        <a href="#" style="color:#fff;text-decoration:none;text-transform:uppercase;font-weight:600;font-size:14px;letter-spacing:.04em;white-space:nowrap">Children's Booker Prize</a>
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Books &amp; authors</a>
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Features</a>
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">About us</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== BOOK HERO (cover + facts, on tan ground) ===== -->
+  <section style="background:var(--tan);padding:32px 48px 56px">
+    <div class="bp-crumb" style="margin-bottom:34px">
+      <a href="index.html">Home</a><span class="sep">/</span>
+      <a href="#">The Booker Library</a><span class="sep">/</span>
+      <a href="#">Children's</a><span class="sep">/</span>
+      <span style="color:var(--ink)">The Murderer's Ape</span>
+    </div>
+    <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap">
+      <!-- placeholder cover -->
+      <div class="bp-cover" style="flex:none;width:280px;background:linear-gradient(160deg,#2c5e63,#163b40)">
+        <span class="ca" style="align-self:flex-end;letter-spacing:.04em">Jakob Wegelius</span>
+        <span class="ct">The<br>Murderer's<br>Ape</span>
+      </div>
+
+      <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:22px;padding-top:4px">
+        <h1 style="margin:0;font-weight:500;font-size:42px;line-height:1.05;color:var(--ink)">The Murderer's Ape</h1>
+
+        <div class="bp-meta">
+          <div class="row">By <b><a href="#">Jakob Wegelius</a></b></div>
+          <div class="row">Translated by <b><a href="#">Peter Graves</a></b></div>
+          <div class="row">Published by <b>Pushkin Children's Books</b></div>
+          <div class="row"><b>Original language:</b> Swedish</div>
+          <!-- NEW: recommended reading age sits in the facts stack, where original language appears -->
+          <div class="row"><b>Recommended reading age:</b> 9&ndash;12</div>
+        </div>
+
+        <!-- same value, shown as a chip for emphasis in the design review -->
+        <span class="bp-age">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 6.5C10.5 5 8.5 4.4 4 4.4V18c4.5 0 6.5.6 8 2 1.5-1.4 3.5-2 8-2V4.4c-4.5 0-6.5.6-8 2.1z"/><path d="M12 6.5V20"/></svg>
+          Recommended reading age: <b>9&ndash;12</b>
+        </span>
+
+        <p style="margin:0;font-family:'Crimson Pro',serif;font-weight:400;font-size:19px;line-height:1.55;color:#4b4741;max-width:40em">
+          Sally Jones is no ordinary ape. A gifted engineer and the loyal friend of the Chief, she works the great rivers and harbours of the world &mdash; until the Chief is accused of murder. To clear his name, Sally Jones follows a trail that winds from the docks of Lisbon to a maharaja's palace, in a mystery told entirely from her point of view.
+        </p>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:4px">
+          <a href="#" class="bp-btn">Buy the book</a>
+          <a href="#" class="bp-btn bp-btn--ghost">Add to reading list</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPLORE MORE CHILDREN'S BOOKS (listing — label on each) ===== -->
+  <section class="bp-hovergroup" style="padding:52px 48px;display:flex;flex-direction:column;gap:30px;border-bottom:1px solid var(--line)">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">Explore more children's books</span>
+      <a href="#" class="bp-link" style="display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.07em;text-transform:uppercase">View all
+        <span class="bp-arrowbox" style="width:18px;height:18px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span>
+      </a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px">
+      <!-- card template repeated; each shows the reading-age listing label -->
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
+        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(160deg,#b4532f,#7d3115);display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">The Boy at the Back of the Class</span></div>
+        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Boy at the Back of the Class</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Onjali Q. Raúf</span>
+        <span class="bp-age-line">Recommended reading age: <b>8&ndash;11</b></span>
+      </a>
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
+        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(160deg,#3a6ea5,#1d3e63);display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">The Letter for the King</span></div>
+        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Letter for the King</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Tonke Dragt</span>
+        <span class="bp-age-line">Recommended reading age: <b>10&ndash;13</b></span>
+      </a>
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
+        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(160deg,#5a8f3c,#345421);display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">Pax</span></div>
+        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Pax</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Sara Pennypacker</span>
+        <span class="bp-age-line">Recommended reading age: <b>9&ndash;12</b></span>
+      </a>
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
+        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(160deg,#7a4a8c,#472757);display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">The Girl of Ink &amp; Stars</span></div>
+        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Girl of Ink &amp; Stars</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Kiran Millwood Hargrave</span>
+        <span class="bp-age-line">Recommended reading age: <b>9&ndash;12</b></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <div style="background:#000">
+    <div style="background:var(--paper);border-radius:0 0 28px 28px;padding:44px 48px;display:flex;justify-content:center">
+      <div style="display:flex;align-items:center;gap:20px">
+        <a href="#" aria-label="Facebook" style="color:var(--gold);display:flex"><svg width="13" height="22" viewBox="0 0 14 24" fill="currentColor"><path d="M9 8V6c0-.9.3-1.4 1.4-1.4H13V.2h-3.2C6.3.2 5 2.2 5 5.3V8H2.4v4.4H5V24h4V12.4h3.1l.5-4.4H9z"/></svg></a>
+        <span style="width:1px;height:24px;background:#d8d4cc"></span>
+        <a href="#" aria-label="Instagram" style="color:var(--gold);display:flex"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <span style="width:1px;height:24px;background:#d8d4cc"></span>
+        <a href="#" aria-label="YouTube" style="color:var(--gold);display:flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.45-5.18a2.6 2.6 0 0 0-1.83-1.85C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.72.47A2.6 2.6 0 0 0 1.45 6.82 27 27 0 0 0 1 12a27 27 0 0 0 .45 5.18 2.6 2.6 0 0 0 1.83 1.85C5.1 19.5 12 19.5 12 19.5s6.9 0 8.72-.47a2.6 2.6 0 0 0 1.83-1.85C23 15.5 23 12 23 12zM9.75 15.02v-6.04L15.5 12z"/></svg></a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:56px 40px;padding:56px 48px 64px">
+      <div style="width:560px;max-width:100%;display:flex;flex-direction:column;gap:28px">
+        <span style="font-weight:500;font-size:30px;line-height:1.15;color:#fff">Discover the best in books — get our newsletter in your inbox!</span>
+        <a href="childrens-resource-bank.html" class="bp-footbtn" style="align-self:flex-start;background:var(--goldL);color:#000;text-decoration:none;border-radius:4px;padding:15px 26px;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase">Sign up</a>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:#b3ada2">© 2026 - Booker Prize Foundation (registered charity in England no 1090049)</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:22px;padding-top:6px">
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">Media centre</a>
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">About us</a>
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">Contact us</a>
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="enhance.js"></script>
+</body>
+</html>
