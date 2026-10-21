@@ -18,3 +18,6 @@ launch.
 | letter.jpg, pax.jpg, girl.jpg, house.jpg | related-content teasers on the book page |
 
 (ape.jpg, boy.jpg, clementine.jpg, wild.jpg are no longer referenced.)
+
+- hero-childrens.jpg, hero-resources.jpg — Children's Booker Prize 2027 announcement artwork (supplied by client).
+- hero-vanda.jpg — Young V&A, photo by David Parry (supplied by client); spare hero option.
