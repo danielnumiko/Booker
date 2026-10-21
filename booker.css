@@ -161,7 +161,7 @@ a:hover .bp-ul-bar,
 .bp-bhero .lang{font-size:16px;color:var(--body)}
 
 /* page hero (listing / resource) — banner image + centred title, like /books */
-.bp-pagehero{position:relative;min-height:380px;display:flex;align-items:flex-end;justify-content:center;background-size:cover;background-position:center;text-align:center}
+.bp-pagehero{position:relative;aspect-ratio:16/9;min-height:360px;display:flex;align-items:flex-end;justify-content:center;background-size:cover;background-position:center;text-align:center}
 .bp-pagehero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(18,17,15,.2),rgba(18,17,15,.1) 45%,rgba(18,17,15,.62))}
 .bp-pagehero h1{position:relative;margin:0 0 42px;color:#fff;font-weight:600;font-size:34px;line-height:1.1}
 
