@@ -6,8 +6,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<style>
+.proto-nav{position:sticky;top:0;z-index:1000;background:#141414;border-bottom:1px solid #2b2b2b;font-family:'ITC Avant Garde Gothic Std','Jost',sans-serif}
+.proto-nav .in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:6px 18px;flex-wrap:wrap;padding:9px 22px}
+.proto-nav .tag{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8d8882}
+.proto-nav .dot{width:7px;height:7px;border-radius:50%;background:#c9b77b}
+.proto-nav .div{width:1px;height:14px;background:#343434}
+.proto-nav a{color:#c3beb6;text-decoration:none;font-size:12.5px;letter-spacing:.01em;padding:5px 3px;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.proto-nav a:hover{color:#fff}
+.proto-nav a.active{color:#fff;border-bottom-color:#c9b77b}
+</style>
 </head>
 <body>
+<div class="proto-nav"><div class="in">
+  <span class="tag"><span class="dot"></span>Prototype</span>
+  <span class="div"></span>
+  <a href="index.html" class="active">Homepage</a>
+  <a href="childrens-book.html">Children's book</a>
+  <a href="childrens-resource-bank.html">Resource Bank &mdash; sign-up</a>
+  <a href="childrens-resource-centre.html">Resource Bank &mdash; downloads</a>
+</div></div>
 <x-dc>
 <helmet data-dc-atomics>
 <link rel="preconnect" href="https://fonts.googleapis.com">
