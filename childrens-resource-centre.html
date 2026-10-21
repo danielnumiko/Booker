@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resource Bank downloads — Booker Prize prototype</title>
+<title>Resource Bank — Booker Prize prototype</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="booker.css">
@@ -20,7 +20,6 @@
 </div></div>
 <div class="bp-page">
 
-  <!-- ===== MASTHEAD ===== -->
   <div style="position:relative;z-index:2;background:#000">
     <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px;padding:0 48px">
       <a href="index.html" aria-label="The Booker Prizes home" style="flex:none;display:block;text-decoration:none">
@@ -30,142 +29,188 @@
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Booker Prize</a>
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">International Booker Prize</a>
         <a href="#" style="color:#fff;text-decoration:none;text-transform:uppercase;font-weight:600;font-size:14px;letter-spacing:.04em;white-space:nowrap">Children's Booker Prize</a>
-        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Books &amp; authors</a>
+        <a href="childrens-books.html" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Books &amp; authors</a>
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Features</a>
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">About us</a>
       </nav>
     </div>
   </div>
 
+  <!-- ===== FEATURE HERO (banner image + gradient + title) ===== -->
+  <section style="position:relative;height:430px;overflow:hidden">
+    <div style="position:absolute;inset:0;display:flex"><div style="flex:1;background:url('img/ape.jpg') center/cover"></div><div style="flex:1;background:url('img/boy.jpg') center/cover"></div><div style="flex:1;background:url('img/letter.jpg') center/cover"></div><div style="flex:1;background:url('img/pax.jpg') center/cover"></div><div style="flex:1;background:url('img/girl.jpg') center/cover"></div><div style="flex:1;background:url('img/house.jpg') center/cover"></div><div style="flex:1;background:url('img/clementine.jpg') center/cover"></div><div style="flex:1;background:url('img/wild.jpg') center/cover"></div></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(rgba(18,17,15,.45),rgba(18,17,15,.2) 38%,rgba(18,17,15,.35) 60%,rgba(18,17,15,.86))"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:14px;padding:0 48px 48px;text-align:center">
+      <span class="bp-eyebrow" style="color:var(--goldL)">Resource Bank &middot; For teachers</span>
+      <h1 style="margin:0;color:#fff;font-weight:500;font-size:42px;line-height:1.08;max-width:16em">Children's Prize 2026 teaching resources</h1>
+    </div>
+  </section>
+
   <!-- ===== INTRO + DOWNLOAD ALL ===== -->
-  <section style="padding:40px 48px 44px;display:flex;flex-direction:column;gap:22px;border-bottom:1px solid var(--line)">
+  <section style="padding:40px 48px 40px;display:flex;flex-direction:column;gap:20px;border-bottom:1px solid var(--line)">
     <div style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;background:#f3efe9;border-radius:999px;padding:6px 14px;font-size:12px;letter-spacing:.04em;color:var(--body)">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 2"/></svg>
       Unlisted page &mdash; share the link freely with colleagues
     </div>
-    <span class="bp-eyebrow">Resource Bank &middot; For teachers</span>
-    <h1 style="margin:0;font-weight:500;font-size:40px;line-height:1.08;color:var(--ink);max-width:16em">Children's Prize 2026 teaching resources</h1>
-    <p style="margin:0;font-family:'Crimson Pro',serif;font-size:19px;line-height:1.55;color:var(--body);max-width:40em">
-      Everything you need to bring the eight shortlisted books into the classroom &mdash; free to download and use. Grab the full set, or pick resources book by book below.
-    </p>
-    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:4px">
+    <p style="margin:0;font-family:'Crimson Pro',serif;font-size:19px;line-height:1.55;color:var(--body);max-width:44em">Free, ready-to-use teaching resources for all eight books on the Children's Booker Prize 2026 shortlist. Everything below is free to download and use &mdash; grab the full set, or take what you need book by book.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
       <a href="#" class="bp-btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg> Download all resources</a>
-      <span style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--body)"><span class="bp-badge zip">ZIP</span> 48 MB &middot; 32 files</span>
+      <span style="font-size:13px;color:var(--body)">ZIP &middot; 48 MB &middot; 32 files</span>
     </div>
   </section>
 
-  <!-- ===== FEATURED BOOK — full resource list ===== -->
-  <section style="padding:48px;display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap;border-bottom:1px solid var(--line)">
-    <div style="flex:none;width:220px;display:flex;flex-direction:column;gap:16px">
-      <div class="bp-cover" style="width:220px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/ape.jpg');background-size:cover;background-position:center">
-        <span class="ca" style="align-self:flex-end;letter-spacing:.04em">Jakob Wegelius</span>
-        <span class="ct" style="font-size:22px">The<br>Murderer's<br>Ape</span>
-      </div>
-      <span class="bp-age-line">Recommended reading age: <b>9&ndash;12</b></span>
+  <!-- The Murderer's Ape -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">The Murderer's Ape</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Jakob Wegelius</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>9&ndash;12</b></span>
     </div>
-    <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:6px">
-      <span class="bp-eyebrow" style="margin-bottom:8px">Resource pack</span>
-      <span style="font-weight:500;font-size:24px;color:var(--ink);margin-bottom:14px">The Murderer's Ape &mdash; by Jakob Wegelius</span>
-
-      <div class="bp-dl">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></span>
-        <span class="info"><span class="t">Lesson plan &amp; learning objectives</span><span class="m"><span class="bp-badge pdf">PDF</span> &nbsp;1.2 MB &middot; 6 pages</span></span>
-        <a href="#" class="dlbtn">Download <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
-      </div>
-      <div class="bp-dl">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg></span>
-        <span class="info"><span class="t">Classroom presentation</span><span class="m"><span class="bp-badge ppt">PPT</span> &nbsp;8.4 MB &middot; 24 slides</span></span>
-        <a href="#" class="dlbtn">Download <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
-      </div>
-      <div class="bp-dl">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-        <span class="info"><span class="t">Discussion guide &amp; activity sheet</span><span class="m"><span class="bp-badge pdf">PDF</span> &nbsp;0.8 MB &middot; 4 pages</span></span>
-        <a href="#" class="dlbtn">Download <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
-      </div>
-      <div class="bp-dl">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></span>
-        <span class="info"><span class="t">Author introduction film</span><span class="m"><span class="bp-badge video">VIDEO</span> &nbsp;4:12 &middot; streams or downloads</span></span>
-        <a href="#" class="dlbtn">Watch / download <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/ape.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: The Murderer's Ape</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 9&ndash;12.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for The Murderer's Ape</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of The Murderer's Ape</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
       </div>
     </div>
   </section>
-
-  <!-- ===== ALL EIGHT BOOKS — resource packs ===== -->
-  <section style="padding:52px 48px;display:flex;flex-direction:column;gap:30px;border-bottom:1px solid var(--line)">
-    <span style="font-weight:500;font-size:26px;color:var(--ink)">Resources for every shortlisted book</span>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px 24px">
-      <!-- pack card template -->
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/boy.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">The Boy at the Back of the Class</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">The Boy at the Back of the Class</span>
-        <span class="bp-age-line">Reading age: <b>8&ndash;11</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">4 resources &middot; PDF, PPT, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/letter.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">The Letter for the King</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">The Letter for the King</span>
-        <span class="bp-age-line">Reading age: <b>10&ndash;13</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">4 resources &middot; PDF, PPT, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/pax.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">Pax</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">Pax</span>
-        <span class="bp-age-line">Reading age: <b>9&ndash;12</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">3 resources &middot; PDF, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/girl.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">The Girl of Ink &amp; Stars</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">The Girl of Ink &amp; Stars</span>
-        <span class="bp-age-line">Reading age: <b>9&ndash;12</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">4 resources &middot; PDF, PPT, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/ape.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">The Murderer's Ape</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">The Murderer's Ape</span>
-        <span class="bp-age-line">Reading age: <b>9&ndash;12</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">4 resources &middot; PDF, PPT, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/house.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">The House with Chicken Legs</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">The House with Chicken Legs</span>
-        <span class="bp-age-line">Reading age: <b>9&ndash;12</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">3 resources &middot; PDF, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/clementine.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">Clementine &amp; the Changeling</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">Clementine &amp; the Changeling</span>
-        <span class="bp-age-line">Reading age: <b>7&ndash;10</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">4 resources &middot; PDF, PPT, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/wild.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px"><span style="color:#fff;font-weight:600;font-size:16px;line-height:1.1">The Wild Before</span></div>
-        <span style="font-weight:500;font-size:16px;color:var(--ink);line-height:1.3">The Wild Before</span>
-        <span class="bp-age-line">Reading age: <b>8&ndash;11</b></span>
-        <span style="font-size:13px;color:var(--body);letter-spacing:.02em">3 resources &middot; PDF, MP4</span>
-        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px;margin-top:2px">Download pack</a>
+  <!-- The Boy at the Back of the Class -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">The Boy at the Back of the Class</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Onjali Q. Raúf</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>8&ndash;11</b></span>
+    </div>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/boy.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: The Boy at the Back of the Class</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 8&ndash;11.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for The Boy at the Back of the Class</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of The Boy at the Back of the Class</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
       </div>
     </div>
   </section>
-
-  <!-- ===== SHARE / SIGNUP CTA BAND ===== -->
-  <section style="background:var(--dark2);padding:48px;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap">
-    <div style="display:flex;flex-direction:column;gap:10px;max-width:34em">
-      <span style="font-weight:500;font-size:24px;line-height:1.2;color:#fff">Know a teacher who'd use these?</span>
-      <span style="font-family:'Crimson Pro',serif;font-size:17px;line-height:1.5;color:var(--cream)">This page is unlisted but not locked &mdash; copy the link and share it, or send them the sign-up page.</span>
+  <!-- The Letter for the King -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">The Letter for the King</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Tonke Dragt</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>10&ndash;13</b></span>
     </div>
-    <div style="display:flex;gap:14px;flex-wrap:wrap">
-      <a href="#" class="bp-btn bp-btn--light">Copy page link</a>
-      <a href="childrens-resource-bank.html" class="bp-btn bp-btn--ghost" style="color:var(--goldL);border-color:var(--goldL)">Go to sign-up page</a>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/letter.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: The Letter for the King</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 10&ndash;13.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for The Letter for the King</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of The Letter for the King</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
+      </div>
     </div>
   </section>
-
+  <!-- Pax -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">Pax</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Sara Pennypacker</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>9&ndash;12</b></span>
+    </div>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/pax.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: Pax</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 9&ndash;12.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for Pax</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of Pax</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+  <!-- The Girl of Ink &amp; Stars -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">The Girl of Ink &amp; Stars</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Kiran Millwood Hargrave</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>9&ndash;12</b></span>
+    </div>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/girl.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: The Girl of Ink &amp; Stars</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 9&ndash;12.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for The Girl of Ink &amp; Stars</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of The Girl of Ink &amp; Stars</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+  <!-- The House with Chicken Legs -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">The House with Chicken Legs</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Sophie Anderson</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>9&ndash;12</b></span>
+    </div>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/house.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: The House with Chicken Legs</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 9&ndash;12.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for The House with Chicken Legs</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of The House with Chicken Legs</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+  <!-- Clementine &amp; the Changeling -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">Clementine &amp; the Changeling</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Marietta Hastings</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>7&ndash;10</b></span>
+    </div>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/clementine.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: Clementine &amp; the Changeling</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 7&ndash;10.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for Clementine &amp; the Changeling</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of Clementine &amp; the Changeling</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+  <!-- The Wild Before -->
+  <section class="bp-hovergroup" style="padding:48px;display:flex;flex-direction:column;gap:26px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+      <span style="font-weight:500;font-size:26px;color:var(--ink)">The Wild Before</span>
+      <span style="font-family:'Crimson Pro',serif;font-size:17px;color:var(--body)">Piers Torday</span>
+      <span class="bp-age-line" style="margin-left:auto">Recommended reading age: <b>8&ndash;11</b></span>
+    </div>
+    <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 440px;display:flex;flex-direction:column;gap:14px">
+        <div class="bp-book" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:url('img/wild.jpg') center/cover"></div>
+        <span class="bp-eyebrow">Teaching pack &middot; PDF + PPT</span>
+        <span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Lesson plan &amp; classroom slides: The Wild Before</span></span>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:var(--body)">A full lesson plan with learning objectives and timings, plus an editable presentation, mapped to Key Stage 2 and pitched for ages 8&ndash;11.</span>
+      </a>
+      <div style="flex:1 1 440px;display:grid;grid-template-columns:1fr 1fr;gap:0 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Discussion guide &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading-group questions for The Wild Before</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Activity sheet &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Printable classroom activities</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Author film &middot; Video</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Meet the author of The Wild Before</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a><a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid var(--line)"><span class="bp-eyebrow">Book extract &middot; PDF</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read the opening chapter</span></span><span class="bp-arrowbox" style="width:18px;height:18px;flex:none;margin-top:2px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span></a>
+      </div>
+    </div>
+  </section>
   <!-- ===== FOOTER ===== -->
   <div style="background:#000">
     <div style="background:var(--paper);border-radius:0 0 28px 28px;padding:44px 48px;display:flex;justify-content:center">
