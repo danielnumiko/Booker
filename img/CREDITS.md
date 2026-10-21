@@ -1,18 +1,20 @@
 # Image credits
 
-Placeholder imagery for this prototype is royalty-free stock from **Pexels**
-(https://www.pexels.com) under the Pexels License (free to use, no attribution
-required). These are stand-ins for the design review — swap for the real book
-covers and commissioned/licensed photography before any public launch.
+## Book covers (`img/covers/`)
+The 12 book covers are the actual published jackets for each title, supplied
+for this prototype. They are the publishers'/illustrators' copyright and are
+used here as design-review placeholders — confirm usage rights before any
+public launch.
 
-| File | Theme (search) | Used for |
-|------|----------------|----------|
-| hero.jpg | children reading books together | Resource Bank landing hero |
-| ape.jpg | gorilla portrait | "The Murderer's Ape" cover |
-| boy.jpg | paper aeroplane / sky | "The Boy at the Back of the Class" |
-| letter.jpg | misty forest path | "The Letter for the King" |
-| pax.jpg | red fox | "Pax" |
-| girl.jpg | starry night sky | "The Girl of Ink & Stars" |
-| house.jpg | dark pine forest | "The House with Chicken Legs" |
-| clementine.jpg | enchanted woodland | "Clementine & the Changeling" |
-| wild.jpg | brown hare, meadow | "The Wild Before" |
+## Editorial / hero imagery (`img/*.jpg`)
+Royalty-free stock from **Pexels** (https://www.pexels.com, Pexels License —
+free to use, no attribution required), used for the page heroes and the
+related-content teasers. Swap for commissioned/licensed photography before
+launch.
+
+| File | Used for |
+|------|----------|
+| hero.jpg | listing & resource-bank page heroes; a related-content teaser |
+| letter.jpg, pax.jpg, girl.jpg, house.jpg | related-content teasers on the book page |
+
+(ape.jpg, boy.jpg, clementine.jpg, wild.jpg are no longer referenced.)
