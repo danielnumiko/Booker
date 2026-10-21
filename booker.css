@@ -46,12 +46,7 @@ a:hover .bp-ul-bar,
   .bp-ul-bar,.bp-ul,.bp-arrowbox,.bp-link img,.bp-hovergroup img{transition:none!important;transition-delay:0s!important}
 }
 
-/* ---- image zoom within a fixed clip ---- */
-.bp-link img,.bp-hovergroup img{transition:transform .55s cubic-bezier(.4,0,.2,1)}
-.bp-link:hover img,.bp-hovergroup:hover img{transform:scale(1.06)}
-.bp-book{transition:transform .45s cubic-bezier(.4,0,.2,1)}
-.bp-link:hover .bp-book{transform:scale(1.04)}
-.bp-link:hover .bp-book img{transform:none}
+/* teaser hover: underline + arrow only — no image scale */
 
 /* ---- carousel + footer buttons ---- */
 .bp-cbtn:hover{background:var(--gold)!important;color:#fff!important}
@@ -85,7 +80,7 @@ a:hover .bp-ul-bar,
 .bp-age-line{font-weight:500;font-size:13px;color:var(--gold8)}
 .bp-age-line b{font-weight:600}
 /* reading-age chip (reader icon) — teaser + book hero */
-.bp-age-chip{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;white-space:nowrap;font-family:'ITC Avant Garde Gothic Std','Jost',sans-serif;font-weight:600;font-size:12.5px;color:#7d5f33;background:#f1ebdf;border-radius:7px;padding:6px 11px 6px 9px}
+.bp-age-chip{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;white-space:nowrap;font-family:'Crimson Pro',serif;font-weight:500;font-size:15px;line-height:1;color:#7d5f33;background:#f1ebdf;border-radius:7px;padding:6px 12px 6px 10px}
 .bp-age-chip svg{width:15px;height:15px;flex:none;color:var(--gold)}
 .bp-age-chip .n{font-weight:700}
 .bp-bhero .bp-age-chip{align-self:center;font-size:13.5px;padding:7px 13px 7px 11px}
