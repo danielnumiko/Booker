@@ -21,8 +21,8 @@ body{background:#dedad4}
   --cream:#d0ccc6;--dark2:#373530;--dark8:#3f3c35;--paper:#f9f7f7;--line:#efefef;
   --tan:#d9c3a5;
   font-family:'ITC Avant Garde Gothic Std','Jost',sans-serif;
-  color:#000;background:#fff;width:1280px;max-width:100%;margin:0 auto;
-  box-shadow:0 4px 50px rgba(0,0,0,.15);overflow:hidden;
+  color:#000;background:#fff;width:1280px;max-width:100%;height:836px;margin:28px auto;
+  box-shadow:0 10px 50px rgba(0,0,0,.22);overflow-y:auto;overflow-x:hidden;
 }
 
 /* ---- links + teaser arrow (indents on hover) ---- */
@@ -131,7 +131,7 @@ a:hover .bp-ul-bar,
    Prototype nav — a review aid to jump between prototype pages.
    Sits above the site frame; deliberately looks like tooling.
    ============================================================ */
-.proto-nav{position:sticky;top:0;z-index:1000;background:#141414;border-bottom:1px solid #2b2b2b;font-family:'ITC Avant Garde Gothic Std','Jost',sans-serif}
+.proto-nav{position:relative;z-index:1000;background:#141414;border-bottom:1px solid #2b2b2b;font-family:'ITC Avant Garde Gothic Std','Jost',sans-serif}
 .proto-nav .in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:6px 18px;flex-wrap:wrap;padding:9px 22px}
 .proto-nav .tag{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8d8882}
 .proto-nav .dot{width:7px;height:7px;border-radius:50%;background:#c9b77b}
