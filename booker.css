@@ -153,11 +153,16 @@ a:hover .bp-ul-bar,
 /* centred book hero (cover + title + contributors + original language) */
 .bp-bhero{max-width:760px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:8px 24px 0}
 .bp-bhero .cover{width:210px;aspect-ratio:0.66;border-radius:2px;box-shadow:0 10px 30px rgba(0,0,0,.28);display:flex;flex-direction:column;justify-content:space-between;padding:18px 16px;color:#fff;margin-bottom:22px}
-.bp-bhero h1{margin:0;font-weight:500;font-size:40px;line-height:1.05;color:var(--ink)}
-.bp-bhero .by{font-size:16px;color:var(--ink)}
+.bp-bhero h1{margin:0;font-weight:600;font-size:34px;line-height:1.25;color:var(--ink)}
+.bp-bhero .by{font-size:16px;color:var(--gold)}
 .bp-bhero .by a{color:var(--gold);text-decoration:none}
 .bp-bhero .by a:hover{text-decoration:underline;text-underline-offset:3px}
 .bp-bhero .lang{font-size:15px;color:var(--body)}
+
+/* page hero (listing / resource) — banner image + centred title, like /books */
+.bp-pagehero{position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;background-size:cover;background-position:center;text-align:center}
+.bp-pagehero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(18,17,15,.5),rgba(18,17,15,.56))}
+.bp-pagehero h1{position:relative;margin:0;color:#fff;font-weight:600;font-size:34px;line-height:1.1}
 
 /* structured-data facts (icon rows) */
 .bp-facts{max-width:760px;margin:34px auto 0;padding:0 24px}
@@ -177,27 +182,28 @@ a:hover .bp-ul-bar,
 
 /* reading column (description etc.) */
 .bp-col{max-width:760px;margin:0 auto;padding:0 24px}
-.bp-col p{font-family:'Crimson Pro',serif;font-weight:400;font-size:18px;line-height:1.6;color:#3f3b35;margin:0 0 20px}
-.bp-col p.lead{font-family:'ITC Avant Garde Gothic Std','Jost',sans-serif;font-weight:500;font-size:22px;line-height:1.3;color:var(--ink);margin-bottom:26px}
+.bp-col p{font-family:'Crimson Pro',serif;font-weight:400;font-size:18px;line-height:1.3;color:var(--body);margin:0 0 20px}
+.bp-col p.lead{font-family:'Crimson Pro',serif;font-weight:400;font-size:18px;line-height:1.3;color:var(--body);margin:0 0 20px}
 .bp-col a{color:var(--gold)}
 
 /* author bio */
 .bp-bio{max-width:760px;margin:0 auto;display:flex;gap:36px;align-items:flex-start;padding:38px 24px;border-top:1px solid var(--line)}
 .bp-bio .ph{flex:none;width:180px;aspect-ratio:1;object-fit:cover;border-radius:3px}
 .bp-bio .bc{display:flex;flex-direction:column;gap:14px}
-.bp-bio .bn{font-weight:500;font-size:24px;color:var(--ink)}
-.bp-bio .bd{font-family:'Crimson Pro',serif;font-size:17px;line-height:1.5;color:var(--body)}
+.bp-bio .bn{font-weight:600;font-size:24px;color:var(--ink)}
+.bp-bio .bd{font-family:'Crimson Pro',serif;font-size:18px;line-height:1.3;color:var(--body)}
 
-/* listing: filters block */
-.bp-filters{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px}
-.bp-filters label{display:block;font-weight:500;font-size:14px;color:var(--ink);margin-bottom:10px}
+/* listing: filters block — 3 gold dropdowns + white search, matched to /books */
+.bp-filters{display:grid;grid-template-columns:1fr 1fr;gap:22px 40px}
+.bp-filters label{display:block;font-weight:600;font-size:15px;color:var(--ink);margin-bottom:9px}
 .bp-select{position:relative}
-.bp-select select,.bp-search input{width:100%;font-family:inherit;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:var(--gold);border:0;border-radius:4px;padding:15px 18px;appearance:none;cursor:pointer}
-.bp-select::after{content:"";position:absolute;right:18px;top:50%;width:8px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.bp-select select{width:100%;font-family:inherit;font-size:13px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:#fff;background:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:13px 40px 13px 16px;appearance:none;cursor:pointer}
+.bp-select::after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:translateY(-70%) rotate(45deg);pointer-events:none}
 .bp-search{position:relative}
-.bp-search input{text-transform:none;cursor:text}
-.bp-search input::placeholder{color:#eee;text-transform:uppercase;letter-spacing:.04em;font-size:13px}
-.bp-search .si{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:#fff;pointer-events:none}
+.bp-search input{width:100%;font-family:inherit;font-size:16px;color:var(--body);background:#fff;border:1px solid var(--gold);border-radius:4px;padding:13px 44px 13px 16px}
+.bp-search input::placeholder{color:#9a958c}
+.bp-search input:focus{outline:none;border-color:var(--gold8)}
+.bp-search .si{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--gold);pointer-events:none}
 
 /* reusable image-backed cover classes (themed photo + scrim) */
 .cov-ape,.cov-boy,.cov-letter,.cov-pax,.cov-girl,.cov-house,.cov-clementine,.cov-wild{background-size:cover;background-position:center}
