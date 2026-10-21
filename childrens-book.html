@@ -13,6 +13,7 @@
   <span class="tag"><span class="dot"></span>Prototype</span>
   <span class="div"></span>
   <a href="index.html">Homepage</a>
+  <a href="childrens-books.html">Children's listing</a>
   <a href="childrens-book.html" class="active">Children's book</a>
   <a href="childrens-resource-bank.html">Resource Bank &mdash; sign-up</a>
   <a href="childrens-resource-centre.html">Resource Bank &mdash; downloads</a>
@@ -29,92 +30,103 @@
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Booker Prize</a>
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">International Booker Prize</a>
         <a href="#" style="color:#fff;text-decoration:none;text-transform:uppercase;font-weight:600;font-size:14px;letter-spacing:.04em;white-space:nowrap">Children's Booker Prize</a>
-        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Books &amp; authors</a>
+        <a href="childrens-books.html" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Books &amp; authors</a>
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Features</a>
         <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">About us</a>
       </nav>
     </div>
   </div>
 
-  <!-- ===== BOOK HERO (cover + facts, on tan ground) ===== -->
-  <section style="background:var(--tan);padding:32px 48px 56px">
-    <div class="bp-crumb" style="margin-bottom:34px">
-      <a href="index.html">Home</a><span class="sep">/</span>
-      <a href="#">The Booker Library</a><span class="sep">/</span>
-      <a href="#">Children's</a><span class="sep">/</span>
-      <span style="color:var(--ink)">The Murderer's Ape</span>
-    </div>
-    <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap">
-      <!-- placeholder cover -->
-      <div class="bp-cover" style="flex:none;width:280px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/ape.jpg');background-size:cover;background-position:center">
-        <span class="ca" style="align-self:flex-end;letter-spacing:.04em">Jakob Wegelius</span>
-        <span class="ct">The<br>Murderer's<br>Ape</span>
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="bp-crumbs">
+    <a href="index.html">Home</a><span class="c">&rsaquo;</span>
+    <a href="#">Books, authors and prize years</a><span class="c">&rsaquo;</span>
+    <a href="childrens-books.html">Books</a><span class="c">&rsaquo;</span>
+    <span style="color:var(--ink)">The Murderer's Ape</span>
+  </div>
+
+  <!-- ===== BOOK HERO (cover + contributors + original language) ===== -->
+  <section style="padding:12px 48px 8px">
+    <div class="bp-bhero">
+      <div class="cover cov-ape">
+        <span style="align-self:flex-end;font-family:'Crimson Pro',serif;font-size:14px;opacity:.9">Jakob Wegelius</span>
+        <span style="font-weight:600;font-size:20px;line-height:1.1">The<br>Murderer's<br>Ape</span>
       </div>
+      <h1>The Murderer's Ape</h1>
+      <div class="by">Written by <a href="#">Jakob Wegelius</a></div>
+      <div class="by">Translated by <a href="#">Peter Graves</a></div>
+      <div class="lang">Original language: Swedish</div>
+      <!-- NEW: recommended reading age, styled exactly like the original-language line -->
+      <div class="lang">Recommended reading age: 9&ndash;12</div>
+    </div>
+  </section>
 
-      <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:22px;padding-top:4px">
-        <h1 style="margin:0;font-weight:500;font-size:42px;line-height:1.05;color:var(--ink)">The Murderer's Ape</h1>
-
-        <div class="bp-meta">
-          <div class="row">By <b><a href="#">Jakob Wegelius</a></b></div>
-          <div class="row">Translated by <b><a href="#">Peter Graves</a></b></div>
-          <div class="row">Published by <b>Pushkin Children's Books</b></div>
-          <div class="row"><b>Original language:</b> Swedish</div>
-          <!-- NEW: recommended reading age sits in the facts stack, where original language appears -->
-          <div class="row"><b>Recommended reading age:</b> 9&ndash;12</div>
-        </div>
-
-        <!-- same value, shown as a chip for emphasis in the design review -->
-        <span class="bp-age">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 6.5C10.5 5 8.5 4.4 4 4.4V18c4.5 0 6.5.6 8 2 1.5-1.4 3.5-2 8-2V4.4c-4.5 0-6.5.6-8 2.1z"/><path d="M12 6.5V20"/></svg>
-          Recommended reading age: <b>9&ndash;12</b>
-        </span>
-
-        <p style="margin:0;font-family:'Crimson Pro',serif;font-weight:400;font-size:19px;line-height:1.55;color:#4b4741;max-width:40em">
-          Sally Jones is no ordinary ape. A gifted engineer and the loyal friend of the Chief, she works the great rivers and harbours of the world &mdash; until the Chief is accused of murder. To clear his name, Sally Jones follows a trail that winds from the docks of Lisbon to a maharaja's palace, in a mystery told entirely from her point of view.
-        </p>
-
-        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:4px">
-          <a href="#" class="bp-btn">Buy the book</a>
-          <a href="#" class="bp-btn bp-btn--ghost">Add to reading list</a>
+  <!-- ===== STRUCTURED DATA (facts) ===== -->
+  <section style="padding:30px 48px 8px">
+    <div class="bp-facts">
+      <div class="bp-fact">
+        <span class="fi"><svg width="22" height="26" viewBox="0 0 22 26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 2h12v6a6 6 0 0 1-12 0z"/><path d="M5 4H2v2a3 3 0 0 0 3 3M17 4h3v2a3 3 0 0 1-3 3M11 14v4M7 24h8M8 24l1-6h4l1 6"/></svg></span>
+        <div class="fc"><span class="lbl">Shortlisted</span><span class="val"><a href="#">The Children's Booker Prize 2026</a></span></div>
+      </div>
+      <div class="bp-fact">
+        <span class="fi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5.5C10.5 4 8.5 3.4 4 3.4V19c4.5 0 6.5.6 8 2 1.5-1.4 3.5-2 8-2V3.4c-4.5 0-6.5.6-8 2.1z"/><path d="M12 5.5V21"/></svg></span>
+        <div class="fc"><span class="lbl">Published by Pushkin Children's Books</span><span class="val">7 March 2026</span></div>
+      </div>
+      <div class="bp-fact">
+        <span class="fi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2 3h3l2.5 13h11l2-9H6"/></svg></span>
+        <div class="fc">
+          <span class="lbl">Buy the book</span>
+          <span class="val" style="display:flex;gap:10px;flex-wrap:wrap;margin:2px 0 4px">
+            <button class="bp-buy">Paperback <svg width="11" height="7" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1l5 5 5-5"/></svg></button>
+            <button class="bp-buy">Shop now <svg width="11" height="7" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1l5 5 5-5"/></svg></button>
+          </span>
+          <span class="val" style="font-family:'Crimson Pro',serif;font-size:16px">Buying books using the 'Buy the book' links helps support <a href="#">our charitable work</a>.</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== EXPLORE MORE CHILDREN'S BOOKS (listing — label on each) ===== -->
-  <section class="bp-hovergroup" style="padding:52px 48px;display:flex;flex-direction:column;gap:30px;border-bottom:1px solid var(--line)">
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
-      <span style="font-weight:500;font-size:26px;color:var(--ink)">Explore more children's books</span>
-      <a href="#" class="bp-link" style="display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.07em;text-transform:uppercase">View all
-        <span class="bp-arrowbox" style="width:18px;height:18px"><svg width="18" height="18" viewBox="0 0 28 28" fill="var(--gold)"><path d="M2.33464 12.8333L21.2055 12.8333L15.868 7.46668L17.5013 5.83334L25.668 14L17.5013 22.1667L15.8388 20.5333L21.2055 15.1667L2.33464 15.1667L2.33464 12.8333Z"/></svg></span>
-      </a>
+  <!-- ===== DESCRIPTION ===== -->
+  <section style="padding:36px 48px 8px">
+    <div class="bp-col">
+      <p class="lead">Shortlisted for the Children's Booker Prize 2026, The Murderer's Ape is a seafaring mystery of loyalty and friendship, told entirely by a gorilla engineer named Sally Jones.</p>
+      <p>Sally Jones is no ordinary ape. A gifted engineer and the loyal friend of the Chief, she works the great rivers and harbours of the world aboard the steamship Hudson Queen. She reads, she repairs engines, and she understands every word spoken to her &mdash; though she cannot speak herself.</p>
+      <p>When the Chief is wrongly accused of murder and sent to prison, Sally Jones is left alone. Determined to clear his name, she follows a trail that winds from the docks of Lisbon to a maharaja's palace in India, meeting fado singers, instrument-makers and villains along the way.</p>
+      <p>First published in Swedish in 2014 and translated by Peter Graves, The Murderer's Ape has won readers and awards around the world for its warmth, its adventure and its unforgettable narrator.</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px">
-      <!-- card template repeated; each shows the reading-age listing label -->
-      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/boy.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">The Boy at the Back of the Class</span></div>
-        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Boy at the Back of the Class</span></span>
-        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Onjali Q. Raúf</span>
-        <span class="bp-age-line">Recommended reading age: <b>8&ndash;11</b></span>
-      </a>
-      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/letter.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">The Letter for the King</span></div>
-        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Letter for the King</span></span>
-        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Tonke Dragt</span>
-        <span class="bp-age-line">Recommended reading age: <b>10&ndash;13</b></span>
-      </a>
-      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/pax.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">Pax</span></div>
-        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Pax</span></span>
-        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Sara Pennypacker</span>
-        <span class="bp-age-line">Recommended reading age: <b>9&ndash;12</b></span>
-      </a>
-      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:12px">
-        <div class="bp-book" style="aspect-ratio:0.72;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.72)),url('img/girl.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:16px"><span style="color:#fff;font-weight:600;font-size:17px;line-height:1.1">The Girl of Ink &amp; Stars</span></div>
-        <span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Girl of Ink &amp; Stars</span></span>
-        <span style="font-family:'Crimson Pro',serif;font-size:15px;color:var(--body)">Kiran Millwood Hargrave</span>
-        <span class="bp-age-line">Recommended reading age: <b>9&ndash;12</b></span>
-      </a>
+  </section>
+
+  <!-- ===== AUTHOR BIO ===== -->
+  <section style="padding:30px 48px 0">
+    <div class="bp-bio">
+      <img class="ph" src="assets/murdoch.jpg" alt="Jakob Wegelius">
+      <div class="bc">
+        <span class="bn">Jakob Wegelius</span>
+        <span class="bd">Jakob Wegelius is a Swedish author and illustrator. The Murderer's Ape and its companion novel have been translated into more than 25 languages and won the Nordic Council Children's and Young People's Literature Prize.</span>
+        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px">More about Jakob Wegelius</a>
+      </div>
+    </div>
+    <div class="bp-bio">
+      <img class="ph" src="assets/lessing.jpg" alt="Peter Graves">
+      <div class="bc">
+        <span class="bn">Peter Graves</span>
+        <span class="bd">Peter Graves is a translator of Swedish and Scandinavian literature, bringing a generation of Nordic children's fiction to English-language readers.</span>
+        <a href="#" class="bp-btn bp-btn--ghost" style="align-self:flex-start;padding:11px 18px">More about Peter Graves</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== READ MORE (asymmetric teaser — related content) ===== -->
+  <section class="bp-hovergroup" style="padding:52px 48px;display:flex;flex-direction:column;gap:30px;border-top:1px solid var(--line)">
+    <span style="font-weight:500;font-size:26px;color:var(--ink)">Read more on The Murderer's Ape</span>
+    <div style="display:flex;gap:40px;align-items:stretch;flex-wrap:wrap">
+      <a class="bp-link" href="#" style="flex:1 1 460px;display:flex;flex-direction:column;gap:14px"><div style="border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);aspect-ratio:16/9;background:#ece9e3"><img src="img/hero.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div><span class="bp-eyebrow">Information</span><span class="bp-title" style="font-weight:500;font-size:22px;line-height:1.18;color:var(--ink)"><span class="bp-ul">Everything you need to know about The Murderer's Ape</span></span><span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.35;color:var(--body)">A guide to the book, its narrator and its author, for readers aged 9 and up</span></a>
+      <div style="flex:1 1 460px;display:grid;grid-template-columns:1fr 1fr;gap:32px 28px">
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:16/10;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:#ece9e3"><img src="img/letter.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div><span class="bp-eyebrow">Book extract</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Read an extract from The Murderer's Ape</span></span></a>
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:16/10;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:#ece9e3"><img src="img/pax.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div><span class="bp-eyebrow">Reading guides</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Reading guide: The Murderer's Ape</span></span></a>
+        <a class="bp-link" href="#" style="display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:16/10;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:#ece9e3"><img src="img/girl.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div><span class="bp-eyebrow">Resource bank</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Download the teaching pack for The Murderer's Ape</span></span></a>
+        <a class="bp-link" href="childrens-books.html" style="display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:16/10;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);background:#ece9e3"><img src="img/house.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div><span class="bp-eyebrow">Books</span><span class="bp-title" style="font-weight:500;font-size:16px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Explore the Children's Booker Prize 2026 shortlist</span></span></a>
+      </div>
     </div>
   </section>
 

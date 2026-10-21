@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Children's books — Booker Prize prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="booker.css">
+</head>
+<body>
+<div class="proto-nav"><div class="in">
+  <span class="tag"><span class="dot"></span>Prototype</span>
+  <span class="div"></span>
+  <a href="index.html">Homepage</a>
+  <a href="childrens-books.html" class="active">Children's listing</a>
+  <a href="childrens-book.html">Children's book</a>
+  <a href="childrens-resource-bank.html">Resource Bank &mdash; sign-up</a>
+  <a href="childrens-resource-centre.html">Resource Bank &mdash; downloads</a>
+</div></div>
+<div class="bp-page">
+
+  <!-- ===== MASTHEAD ===== -->
+  <div style="position:relative;z-index:2;background:#000">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px;padding:0 48px">
+      <a href="index.html" aria-label="The Booker Prizes home" style="flex:none;display:block;text-decoration:none">
+        <img src="assets/logo.png" alt="The Booker Prizes" style="width:124px;height:auto;display:block">
+      </a>
+      <nav style="display:flex;align-items:center;gap:22px;flex:0 1 auto">
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Booker Prize</a>
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">International Booker Prize</a>
+        <a href="#" style="color:#fff;text-decoration:none;text-transform:uppercase;font-weight:600;font-size:14px;letter-spacing:.04em;white-space:nowrap">Children's Booker Prize</a>
+        <a href="childrens-books.html" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Books &amp; authors</a>
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">Features</a>
+        <a href="#" style="color:var(--goldL);text-decoration:none;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em;white-space:nowrap">About us</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== PAGE TITLE (hero) ===== -->
+  <section style="position:relative;min-height:260px;display:flex;align-items:center;justify-content:center;background:linear-gradient(0deg,rgba(20,19,17,.72),rgba(20,19,17,.72)),url('img/hero.jpg');background-size:cover;background-position:center">
+    <h1 style="margin:0;color:#fff;font-weight:500;font-size:44px">Children's books</h1>
+  </section>
+
+  <!-- ===== INTRO ===== -->
+  <section style="padding:48px;display:flex;flex-direction:column;gap:14px;border-bottom:1px solid var(--line)">
+    <span style="font-weight:500;font-size:28px;line-height:1.15;color:var(--ink);max-width:22em">Find your next read among the books shortlisted for the Children's Booker Prize</span>
+    <p style="margin:0;font-family:'Crimson Pro',serif;font-size:18px;line-height:1.55;color:var(--body);max-width:46em">From picture-book adventures to novels for older readers, every title carries a recommended reading age to help families, teachers and librarians find the right fit. Where will you begin?</p>
+  </section>
+
+  <!-- ===== FILTERS ===== -->
+  <section style="padding:40px 48px 8px;display:flex;flex-direction:column;gap:20px">
+    <div class="bp-filters">
+      <div><label>Publication date</label><div class="bp-select"><select><option>All</option><option>2026</option><option>2025</option></select></div></div>
+      <div><label>Author surname</label><div class="bp-select"><select><option>All</option><option>A–F</option><option>G–M</option><option>N–Z</option></select></div></div>
+      <div><label>Recommended reading age</label><div class="bp-select"><select><option>All reading ages</option><option>5–7</option><option>7–9</option><option>8–11</option><option>9–12</option><option>10–13</option></select></div></div>
+      <div><label>Search</label><div class="bp-search"><input type="text" placeholder="Keyword"><span class="si"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span></div></div>
+    </div>
+    <a href="#" class="bp-link" style="align-self:flex-end;color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.07em;text-transform:uppercase;border:1.5px solid var(--gold);border-radius:4px;padding:11px 18px">Clear all filters</a>
+  </section>
+
+  <!-- ===== BOOK GRID (compact book listing) ===== -->
+  <section class="bp-hovergroup" style="padding:24px 48px 56px">
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:40px 28px">
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-ape" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">The Murderer's Ape</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Murderer's Ape</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Jakob Wegelius</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>9&ndash;12</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-boy" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">The Boy at the Back of the Class</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Boy at the Back of the Class</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Onjali Q. Raúf</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>8&ndash;11</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-letter" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">The Letter for the King</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Letter for the King</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Tonke Dragt</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>10&ndash;13</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-pax" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">Pax</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Pax</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Sara Pennypacker</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>9&ndash;12</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-girl" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">The Girl of Ink &amp; Stars</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Girl of Ink &amp; Stars</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Kiran Millwood Hargrave</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>9&ndash;12</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-house" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">The House with Chicken Legs</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The House with Chicken Legs</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Sophie Anderson</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>9&ndash;12</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-clementine" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">Clementine &amp; the Changeling</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Clementine &amp; the Changeling</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Marietta Hastings</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>7&ndash;10</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-wild" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">The Wild Before</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Wild Before</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Piers Torday</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>8&ndash;11</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-house" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">Skellig</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Skellig</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">David Almond</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>9&ndash;12</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-girl" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">Northern Lights</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Northern Lights</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Philip Pullman</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>10&ndash;13</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-wild" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">The Last Bear</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">The Last Bear</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">Hannah Gold</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>8&ndash;11</b></span></a>
+
+      <a class="bp-link" href="childrens-book.html" style="display:flex;flex-direction:column;gap:9px"><div class="bp-book cov-letter" style="aspect-ratio:0.66;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.18);display:flex;align-items:flex-end;padding:12px"><span style="color:#fff;font-weight:600;font-size:15px;line-height:1.1">Tyger</span></div><span class="bp-title" style="font-weight:500;font-size:15px;line-height:1.3;color:var(--ink)"><span class="bp-ul">Tyger</span></span><span style="font-family:'Crimson Pro',serif;font-size:14px;color:var(--body)">SF Said</span><span class="bp-age-line" style="font-size:12px">Reading age: <b>9&ndash;12</b></span></a>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <div style="background:#000">
+    <div style="background:var(--paper);border-radius:0 0 28px 28px;padding:44px 48px;display:flex;justify-content:center">
+      <div style="display:flex;align-items:center;gap:20px">
+        <a href="#" aria-label="Facebook" style="color:var(--gold);display:flex"><svg width="13" height="22" viewBox="0 0 14 24" fill="currentColor"><path d="M9 8V6c0-.9.3-1.4 1.4-1.4H13V.2h-3.2C6.3.2 5 2.2 5 5.3V8H2.4v4.4H5V24h4V12.4h3.1l.5-4.4H9z"/></svg></a>
+        <span style="width:1px;height:24px;background:#d8d4cc"></span>
+        <a href="#" aria-label="Instagram" style="color:var(--gold);display:flex"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <span style="width:1px;height:24px;background:#d8d4cc"></span>
+        <a href="#" aria-label="YouTube" style="color:var(--gold);display:flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.45-5.18a2.6 2.6 0 0 0-1.83-1.85C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.72.47A2.6 2.6 0 0 0 1.45 6.82 27 27 0 0 0 1 12a27 27 0 0 0 .45 5.18 2.6 2.6 0 0 0 1.83 1.85C5.1 19.5 12 19.5 12 19.5s6.9 0 8.72-.47a2.6 2.6 0 0 0 1.83-1.85C23 15.5 23 12 23 12zM9.75 15.02v-6.04L15.5 12z"/></svg></a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:56px 40px;padding:56px 48px 64px">
+      <div style="width:560px;max-width:100%;display:flex;flex-direction:column;gap:28px">
+        <span style="font-weight:500;font-size:30px;line-height:1.15;color:#fff">Discover the best in books — get our newsletter in your inbox!</span>
+        <a href="childrens-resource-bank.html" class="bp-footbtn" style="align-self:flex-start;background:var(--goldL);color:#000;text-decoration:none;border-radius:4px;padding:15px 26px;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase">Sign up</a>
+        <span style="font-family:'Crimson Pro',serif;font-size:16px;line-height:1.4;color:#b3ada2">© 2026 - Booker Prize Foundation (registered charity in England no 1090049)</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:22px;padding-top:6px">
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">Media centre</a>
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">About us</a>
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">Contact us</a>
+        <a href="#" class="bp-footlink" style="color:var(--goldL);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;font-weight:500;font-size:14px;letter-spacing:.04em">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="enhance.js"></script>
+</body>
+</html>
