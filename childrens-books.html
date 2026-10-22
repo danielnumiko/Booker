@@ -172,7 +172,7 @@
         if((ranges[sn]||'').indexOf(ini)<0) ok=false;
       }
       if(q && (c.textContent||'').toLowerCase().indexOf(q)<0) ok=false;
-      c.style.display=ok?'':'none';
+      c.style.display=ok?'flex':'none';
     });
   }
   [pub,auth,prize].forEach(function(s){ if(s) s.addEventListener('change',apply); });
